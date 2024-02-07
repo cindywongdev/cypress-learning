@@ -1,6 +1,6 @@
 describe ('Fundamentals test', () => {
-  it('passes', () => {
-    cy.visit('http://localhost:3000/fundamentals')
+  it('Contains correct header text', () => {
+    cy.visit('/fundamentals')
     // can pass string or regex into methods, and this one specifically makes it so that test is case insensitive
     // method #1:
     // cy.get('[data-test="fundamentals-header"]').contains(/Testing Fundamentals/i)
