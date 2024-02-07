@@ -11,7 +11,7 @@ describe ('Fundamentals test', () => {
     // method #1:
     // cy.get('[data-test="fundamentals-header"]').contains(/Testing Fundamentals/i)
     // method #2:
-    cy.get('[data-test="fundamentals-header"]').should('contain.text', 'Testing Fundamentals')
+    cy.getDataTest('fundamentals-header').should('contain.text', 'Testing Fundamentals')
   })
   // can chain only onto it so that the runner only runs this it clock (allows you to focus on one test)
   it('Acccordion works correctly', () => {
