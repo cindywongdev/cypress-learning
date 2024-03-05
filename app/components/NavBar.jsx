@@ -2,16 +2,16 @@ import NavItem from "./NavItem"
 
 const navItems = [
     {
-    label: 'Why Cypress?',
-    path: '/',
+        label: 'Why Cypress?',
+        path: '/',
     },
     {
-    label: 'Overview',
-    path: '/overview'
+        label: 'Overview',
+        path: '/overview'
     },
     {
-    label: 'Fundamentals',
-    path: '/fundamentals'
+        label: 'Fundamentals',
+        path: '/fundamentals'
     },
     {
         label: 'Forms',
@@ -19,11 +19,11 @@ const navItems = [
     },
     {
         label: 'Examples',
-        path: '/examples' 
+        path: '/examples'
     },
     {
         label: 'Component',
-        path: '/component' 
+        path: '/component'
     },
     {
         label: 'Best Practices',
@@ -31,11 +31,11 @@ const navItems = [
     },
 ]
 
-export default function NavBar(){
+export default function NavBar() {
     return (
         <ul className="nav-bar">
             {
-                navItems.map((item)=> (
+                navItems.map((item) => (
                     <NavItem key={item.label} label={item.label} path={item.path} />
                 ))
             }
