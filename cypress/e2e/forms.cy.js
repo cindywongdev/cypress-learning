@@ -32,7 +32,11 @@ describe('form tests', () => {
 
         // #3: unhappy path for empty input
         // cy.get('@subscribe-input').type('') // this will throw a cypress error bc you cant type nothing, this basically tells cypress to do nothing. so just skip this step and click the button
+        cy.contains(/fail!/i).should('not.exist')
         cy.getDataTest('subscribe-button').click()
+        cy.contains(/fail!/i).should('exist')
+        cy.wait(3000)
+        cy.contains(/fail!/i).should('not.exist')
     })
 })
 
