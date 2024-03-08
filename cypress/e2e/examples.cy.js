@@ -37,5 +37,3 @@ describe('various examples', () => {
         cy.getDataTest('post-button').click()
     })
 })
-
-// !
