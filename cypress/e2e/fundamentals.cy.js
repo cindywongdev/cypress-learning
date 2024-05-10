@@ -9,9 +9,9 @@ describe ('Fundamentals test', () => {
   it('Contains correct header text', () => {
     // can pass string or regex into methods, and this one specifically makes it so that test is case insensitive
     // method #1:
-    // cy.get('[data-test="fundamentals-header"]').contains(/Testing Fundamentals/i)
+    cy.get('[data-test="fundamentals-header"]').contains(/Testing Fundamentals/i)
     // method #2:
-    cy.getDataTest('fundamentals-header').should('contain.text', 'Testing Fundamentals')
+    // cy.getDataTest('fundamentals-header').should('contain.text', 'Testing Fundamentals')
   })
   // can chain only onto it so that the runner only runs this it clock (allows you to focus on one test)
   it('Acccordion works correctly', () => {
